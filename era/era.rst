@@ -68,12 +68,12 @@ Registering a Cluster
 
 #. Select **I have read and agree to terms and conditions** and click **Continue**.
 
-#. Enter **techX2019!** as the **admin** password and click **Set Password**.
+#. Enter **Next2019!** as the **admin** password and click **Set Password**.
 
 #. Login using the following credentials:
 
    - **Username** - admin
-   - **Password** - techX2019!
+   - **Password** - Next2019!
 
 #. On the **Welcome to Era** page, fill in the following information:
 
@@ -81,7 +81,7 @@ Registering a Cluster
    - **Description** - (Optional) Description
    - **Address** - *Your Prism Element Cluster IP*
    - **Prism Element Administrator** - admin
-   - **Password** - techX2019!
+   - **Password** - *Your Cluster Password*
 
    .. figure:: images/3b2.png
 
@@ -184,7 +184,7 @@ Era makes it even simpler to provision a simple PostgreSQL database by providing
 
    - **Database Name** - *Initials*\_LabDB
    - **Description** - (Optional) Description
-   - **POSTGRES Password** - techX2019!
+   - **POSTGRES Password** - Next2019!
    - **Database Parameter Profile** - DEFAULT_POSTGRES_PARAMS
    - **Listener Port** - 5432
    - **Size (GiB)** - 200
@@ -193,7 +193,7 @@ Era makes it even simpler to provision a simple PostgreSQL database by providing
 
      Era also offers to ability to run scripts or commands both before and after database creation . These can be used to further customize an environment based on specific enterprise needs.
 
-   .. figure:: images/4e2.png
+   .. figure:: images/4e3.png
 
 #. Click **Next**.
 
@@ -237,7 +237,7 @@ Now that Era has successfully provisioned a database instance, you will connect 
 
    .. figure:: images/5b.png
 
-#. Using *Initials*\ **-Windows-ToolsVM**, open **pgAdmin**.
+#. Using *Initials*\ **-Windows-ToolsVM** (created as part of the `Lab Setup`_), open **pgAdmin**.
 
    .. note::
 
@@ -255,7 +255,7 @@ Now that Era has successfully provisioned a database instance, you will connect 
    - **Port** - 5432
    - **Maintenance Database** - postgres
    - **Username** - postgres
-   - **Password** - techX2019!
+   - **Password** - Next2019!
 
    .. figure:: images/5d2.png
 
@@ -355,14 +355,14 @@ Now that you have created a source database, you can easily clone it using Era T
 
 #. Click **Next**.
 
-#. On the **Database Server** tab, fill out the following fields:
+#. On the **Database** tab, fill out the following fields:
 
    - **Name** - *Initials*\_LabDB_Clone
    - **Description** - (Optional) Description
-   - **Password** - techX2019!
+   - **Password** - Next2019!
    - **Database Parameter Profile** - DEFAULT_POSTGRES_PARAMS
 
-   .. figure:: images/21a2.png
+   .. figure:: images/21a3.png
 
 #. Click **Clone**.
 
@@ -372,7 +372,7 @@ Now that you have created a source database, you can easily clone it using Era T
 
    .. figure:: images/21b.png
 
-#. Following the completion of the clone operation, you can connect to the clone instance as described in the previous section, `Connecting to the Database`_.
+#. Following the completion of the clone operation, you can connect to the clone instance as described in the previous section, `Connecting to the Database`_, this time by clicking on Clones instead of Sources.
 
    .. figure:: images/23a2.png
 
